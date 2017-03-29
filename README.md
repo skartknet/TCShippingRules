@@ -1,2 +1,2 @@
 # TCShippingRules
-Allows to define shipping rules by weight
+Allows to define shipping rules by weight on TeaCommerce.

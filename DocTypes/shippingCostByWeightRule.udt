@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType Folders="Settings">
+  <Info>
+    <Name>Shipping Cost By Weight Rule</Name>
+    <Alias>shippingCostByWeightRule</Alias>
+    <Icon>icon-weight color-orange</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description />
+    <AllowAtRoot>False</AllowAtRoot>
+    <IsListView>False</IsListView>
+    <Compositions />
+    <AllowedTemplates />
+    <DefaultTemplate></DefaultTemplate>
+  </Info>
+  <Structure />
+  <GenericProperties>
+    <GenericProperty>
+      <Name>Price Type</Name>
+      <Alias>ruleType</Alias>
+      <Type>Koben.TeaCommerce.ShippingTypeRadio</Type>
+      <Definition>af2a0f53-2b28-4d97-9f76-feace30f3dc5</Definition>
+      <Tab>Configuration</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>True</Mandatory>
+      <Description><![CDATA[Fixed: price for the whole range.
+By Kilo: price will apply to each kilo in the range.]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>Price</Name>
+      <Alias>price</Alias>
+      <Type>Umbraco.Decimal</Type>
+      <Definition>ffe04655-5d8c-48b1-8741-26fc33df5b90</Definition>
+      <Tab>Configuration</Tab>
+      <SortOrder>1</SortOrder>
+      <Mandatory>True</Mandatory>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>To Weight</Name>
+      <Alias>toWeight</Alias>
+      <Type>Umbraco.Integer</Type>
+      <Definition>26ef3747-eba4-4fdc-86d2-325d94746be8</Definition>
+      <Tab>Configuration</Tab>
+      <SortOrder>3</SortOrder>
+      <Mandatory>True</Mandatory>
+      <Validation>^[0-9]*$</Validation>
+      <Description><![CDATA[In grams]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>From Weight</Name>
+      <Alias>fromWeight</Alias>
+      <Type>Umbraco.Integer</Type>
+      <Definition>26ef3747-eba4-4fdc-86d2-325d94746be8</Definition>
+      <Tab>Configuration</Tab>
+      <SortOrder>2</SortOrder>
+      <Mandatory>True</Mandatory>
+      <Validation>^[0-9]*$</Validation>
+      <Description><![CDATA[In grams]]></Description>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>40</Id>
+      <Caption>Configuration</Caption>
+      <SortOrder>0</SortOrder>
+    </Tab>
+  </Tabs>
+</DocumentType>

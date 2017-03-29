@@ -1,0 +1,25 @@
+﻿{
+  propertyEditors: [{
+    alias: 'Koben.TeaCommerce.ShippingMethodPicker',
+	name: 'Tea Commerce: Shipping method picker',
+	editor: {
+  		view: '~/App_Plugins/Koben.TeaCommerce/PropertyEditors/shipping-picker.html',
+			hideLabel: true,
+			valueType: 'JSON'
+	},
+	group: 'TeaCommerce'
+  }, {
+    alias: 'Koben.TeaCommerce.ShippingTypeRadio',
+	name: 'Tea Commerce: Shipping Type Radio button',
+	editor: {
+  		view: '~/App_Plugins/Koben.TeaCommerce/PropertyEditors/shipping-type-radio.html',			
+			valueType: 'INT'
+	},
+	group: 'TeaCommerce'
+  }],
+  
+  javascript: [
+    '~/App_Plugins/Koben.TeaCommerce/PropertyEditors/shipping-picker.controller.js',
+	'~/App_Plugins/Koben.TeaCommerce/PropertyEditors/shipping-type-radio.controller.js'
+  ]
+}

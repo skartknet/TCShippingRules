@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType Folders="Settings">
+  <Info>
+    <Name>Shipping Method</Name>
+    <Alias>shippingMethod</Alias>
+    <Icon>icon-truck color-orange</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description />
+    <AllowAtRoot>False</AllowAtRoot>
+    <IsListView>False</IsListView>
+    <Compositions />
+    <AllowedTemplates />
+    <DefaultTemplate></DefaultTemplate>
+  </Info>
+  <Structure>
+    <DocumentType>shippingCostByWeightRule</DocumentType>
+  </Structure>
+  <GenericProperties>
+    <GenericProperty>
+      <Name>TC Shipping Link</Name>
+      <Alias>tCShippingLink</Alias>
+      <Type>Koben.TeaCommerce.ShippingMethodPicker</Type>
+      <Definition>6bf8f1b4-0d49-4918-86ae-baaa46508fae</Definition>
+      <Tab>Configuration</Tab>
+      <SortOrder>0</SortOrder>
+      <Mandatory>False</Mandatory>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>39</Id>
+      <Caption>Configuration</Caption>
+      <SortOrder>0</SortOrder>
+    </Tab>
+  </Tabs>
+</DocumentType>

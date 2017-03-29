@@ -1,0 +1,19 @@
+﻿<div ng-controller="TeaCommerce.ShippingTypeController">
+    <div class="umb-editor umb-radiobuttons">
+        <ul class="unstyled">
+            <!-- ngRepeat: item in model.config.items -->
+            <li class="ng-scope">
+                <label class="radio ng-binding">
+                    <input type="radio" name="radiobuttons-ruleType" value="0" ng-model="model.value">
+                    Fixed
+                </label>
+            </li>
+            <li class="ng-scope">
+                <label class="radio ng-binding">
+                    <input type="radio" name="radiobuttons-ruleType" value="1" ng-model="model.value">
+                    By Kilo
+                </label>
+            </li>
+        </ul>
+    </div>
+</div>

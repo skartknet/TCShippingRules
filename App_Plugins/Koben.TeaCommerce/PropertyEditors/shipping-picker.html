@@ -1,0 +1,14 @@
+﻿<div ng-controller="TeaCommerce.ShippingPickerController">
+    <div>
+        <label class="control-label">Store</label>
+        <select ng-model="model.value.storeId" ng-change="refreshMethods()" ng-options="store.id as store.name for store in stores" class="umb-editor">
+            <option value="">----</option>
+        </select>
+    </div>
+    <div>
+        <label class="control-label">Shipping Method</label>
+        <select ng-model="model.value.shippingMethodId" ng-options="method.id as method.name for method in methods" class="umb-editor">
+            <option value="">----</option>
+        </select>
+    </div>
+</div>
